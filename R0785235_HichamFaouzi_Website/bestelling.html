@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>        
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/bestelling.css">
+    <link rel="stylesheet" type="text/css" href="css/menu-grid.css">
+    <title>OKKA | BestelPagina</title>
+    <link rel="shortcut icon" href="img/okkaLL.jpg" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/bestelling.js">  </script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <nav id="menu">
+        <div id="1">
+        <a href="index.html"  >Home</a>
+        </div>
+        <div id="2">
+        <a href="locatie.html"  >Locatie</a>
+        </div>
+        <div id="3">
+        <a href="openingsuren.html"  >Openingsuren</a>
+        </div>
+        <div id="4">
+          <a href="menu.html"  >Menu</a>
+        </div>
+        <div id="5">
+        <a href="fotos.html"  >Foto's</a>
+        </div>
+        <div id="6">
+        <a href="bestelling.html"  >Bestelling</a>
+        </div>
+    </nav>
+
+    <h1>
+        Bestel nu een of meerdere van onze verrukkelijke gerechten en drankjes, aarzel niet!
+    </h1>
+
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Voeg toe/Neem af</th>
+            <th>Prijs in €</th>
+            <th>Aantal</th>
+        </tr>
+        <tr>
+            <td>Shakshuka meets roerei</td>
+            <td><img src="img/plus.png" height=40px onclick="Plus('aantal_roerei')">
+                <img src="img/min.png" height=40px onclick="Min('aantal_roerei')"></td>
+                <td class="prijs">5.50</td>
+            <td class="aantal" id="aantal_roerei">0</td>
+        </tr>
+        <tr>
+            <td>Cig köfte</td>
+            <td><img src="img/plus.png" height=40px onclick="Plus('aantal_kofte')">
+                <img src="img/min.png" height=40px onclick="Min('aantal_kofte')"></td>
+                <td class="prijs">3</td>
+            <td class="aantal" id="aantal_kofte">0</td>
+        </tr>
+        <tr>
+            <td>Sarma</td>
+            <td><img src="img/plus.png" height=40px onclick="Plus('aantal_Sarma')">
+                <img src="img/min.png" height=40px onclick="Min('aantal_Sarma')"></td>
+                <td class="prijs">4</td>
+            <td class="aantal" id="aantal_Sarma">0</td>
+        </tr>
+        <tr>
+            <td>Manti</td>
+            <td><img src="img/plus.png" height=40px onclick="Plus('aantal_Manti')">
+                <img src="img/min.png" height=40px onclick="Min('aantal_Manti')"></td>
+                <td class="prijs">7.50</td>
+            <td class="aantal" id="aantal_Manti">0</td>
+        </tr>
+        <tr>
+            <td>Lahmacun</td>
+            <td><img src="img/plus.png" height=40px onclick="Plus('aantal_Lahmacun')">
+                <img src="img/min.png" height=40px onclick="Min('aantal_Lahmacun')"></td>
+                <td class="prijs">2.50</td>
+            <td class="aantal" id="aantal_Lahmacun">0</td>
+        </tr>
+        <tr>
+            <td>Ayran</td>
+            <td><img src="img/plus.png" height=40px onclick="Plus('aantal_Ayran')">
+                <img src="img/min.png" height=40px onclick="Min('aantal_Ayran')"></td>
+                <td class="prijs">2.50</td>
+            <td class="aantal" id="aantal_Ayran">0</td>
+        </tr>
+        <tr>
+            <td>Cay</td>
+            <td><img src="img/plus.png" height=40px onclick="Plus('aantal_cay')">
+                <img src="img/min.png" height=40px onclick="Min('aantal_cay')"></td>
+                <td class="prijs">1.50</td>
+            <td class="aantal" id="aantal_cay">0</td>
+        </tr>
+        <tr>
+            <td>Salgam</td>
+            <td><img src="img/plus.png" height=40px onclick="Plus('aantal_Salgam')">
+                <img src="img/min.png" height=40px onclick="Min('aantal_Salgam')"></td>
+                <td class="prijs">2</td>
+            <td class="aantal" id="aantal_Salgam">0</td>
+        </tr>
+        <tr>
+            <td>Boza</td>
+            <td><img src="img/plus.png" height=40px onclick="Plus('aantal_Boza')">
+                <img src="img/min.png" height=40px onclick="Min('aantal_Boza')"></td>
+                <td class="prijs">3</td>
+            <td class="aantal" id="aantal_Boza">0</td>
+        </tr>
+        <tr>
+            <td>Frisdrank</td>
+            <td><img src="img/plus.png" height=40px onclick="Plus('aantal_Frisdrank')">
+                <img src="img/min.png" height=40px onclick="Min('aantal_Frisdrank')"></td>
+                <td class="prijs">2.50</td>
+            <td class="aantal" id="aantal_Frisdrank">0</td>
+        </tr>
+        <tr>
+            <td colspan=2>TOTAAL</td>
+            <td id="totaal">0</td>
+        </tr>
+    </table>
+    <br>
+    <button  onclick="Afrekenen()">Afrekenen!</button>
+    <footer id="footer">
+        <div id="social">
+                <ul>
+                  <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.snapchat.com/l/nl-nl/"><i class="fab fa-snapchat-ghost"></i></a>
+                  <a href="https://nl.pinterest.com/"><i class="fab fa-pinterest-p"></i></a>
+                  <a href="https://twitter.com/?lang=nl"><i class="fab fa-twitter"></i></a>
+                  <a href="https://be.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                </ul>
+              </div>
+          
+              <div id="subscribe">
+                <div id="info-subscribe">
+                  Subscribe for updates
+              </div>
+          
+          
+                <form>
+                  <input class="subscribe" type="text" name="email" placeholder="E-mail adres">
+          
+                <br>
+                <button type="button" name="btn" id="footerButton" onclick="alert('Bedankt voor uw subscribe! We houden u up-to-date!')">
+                      Submit
+                  </button>
+                </form>
+          </div>
+</footer>
+</body>
+</html>

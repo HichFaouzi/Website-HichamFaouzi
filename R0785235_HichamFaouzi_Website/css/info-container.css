@@ -1,0 +1,35 @@
+#info-container{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: auto auto;
+    grid-template-areas: "tekst1 foto1"
+                         "foto2 tekst2";
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.info-titel{
+    text-align: center;
+}
+
+#wie{
+    grid-area: tekst1;
+    background-color: #E7E5E1;
+}
+
+#foto1{
+    grid-area: foto1;
+    height: 100%;
+    width: 100%;    
+}
+
+#wat{
+    grid-area: tekst2;
+}
+
+#foto2{
+    grid-area: foto2;
+    height: 100%;
+    width: 100%;
+}

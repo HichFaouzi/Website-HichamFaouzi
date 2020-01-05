@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/menuPage.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/menu-grid.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>OKKA | MenuKaart</title>
+    <link rel="shortcut icon" href="img/okkaLL.jpg" />
+ 
+</head>
+<body>
+  <nav id="menu">
+    <div id="1">
+    <a href="index.html"  >Home</a>
+    </div>
+    <div id="2">
+    <a href="locatie.html"  >Locatie</a>
+    </div>
+    <div id="3">
+    <a href="openingsuren.html"  >Openingsuren</a>
+    </div>
+    <div id="4">
+      <a href="menu.html"  >Menu</a>
+    </div>
+    <div id="5">
+    <a href="fotos.html"  >Foto's</a>
+    </div>
+    <div id="6">
+    <a href="bestelling.html"  >Bestelling</a>
+    </div>
+</nav>
+            <div id="menuCard">
+                <h1> Menu Kaart</h1>
+                <h3> Kies een categorie: </h3>
+                <div id="Tabs">
+                    <a class="myLink" href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+                      <div class="tablink">Eat</div>
+                    </a>
+                    <a class="myLink"href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+                      <div class="tablink" >Drink</div>
+                    </a>
+                  </div>
+              
+                  <div id="Eat" class="menu">
+                    <h2>Shakshuka</h2>
+                    <p class="item">Een heerlijk shakshuka (eieren in lichtpittige groenten) recept uit de afrikaanse keuken wat echt de moeite waard is om uit te proberen. <br> €5.50</p><br>
+                  
+                    <h2>Cig köfte </h2>
+                    <p class="item">Het Turkse gerecht cig köfte zijn vegetarische balletjes gemaakt van bulgur, ui, tomaten- of rodepaprikapasta en isotpeper. <br> €3</p><br>
+                  
+                    <h2>Sarma</h2>
+                    <p class="item">De lekkernij bestaat uit een speciaal toebereid vulsel van rijst, tomaten en gehakt, dat wordt opgerold in druiven-, kool-, spinaziezuring- of snijbietbladeren. <br> €4</p><br>
+                  
+                    <h2>Manti</h2>
+                    <p class="item">Manti (ook wel gevulde deegbolletjes) is een Turks-Aziatisch gerecht
+                      wat met name in Anatolië wordt gegeten.
+                      Het bestaat uit deegbolletjes gevuld met gehakt. <br> €7.50</p><br>
+                  
+                    <h2>Lahmacun/Turkse pizza</h2>
+                    <p class="item">Zelfgemaakte Turkse pizza's, ook wel lahmacun genoemd, met een laagje gehakt, paprika en tomaat. <br> €2.50</p>
+                  </div>
+              
+                  <div id="Drinks" class="menu">
+                    <h2>Ayran</h2>
+                    <p class="item">Yoghurt drank, Turkse Yoghurt gemengd met water en zout. <br> €2.50</p><br>
+                  
+                    <h2>Cay</h2>
+                    <p class="item">Turkse thee <br> €1.50</p><br>
+                  
+                    <h2>Salgam</h2>
+                    <p class="item"> Een zoute en zure groentesap. <br> €2.00</p><br>
+                  
+                    <h2>Boza</h2>
+                    <p class="item">Zure, zoete, koude en cremige drankje <br> €3.00</p><br>
+                  
+                    <h2>Frisdrank</h2>
+                    <p class="item">Coke, Sprite, Fanta, etc. <br> €2.50</p>
+                  </div> 
+            </div>
+            <footer id="footer">
+              <div id="social">
+                      <ul>
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.snapchat.com/l/nl-nl/"><i class="fab fa-snapchat-ghost"></i></a>
+                        <a href="https://nl.pinterest.com/"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="https://twitter.com/?lang=nl"><i class="fab fa-twitter"></i></a>
+                        <a href="https://be.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                      </ul>
+                    </div>
+                
+                    <div id="subscribe">
+                      <div id="info-subscribe">
+                        Subscribe for updates
+                    </div>
+                
+                
+                      <form>
+                        <input class="subscribe" type="text" name="email" placeholder="E-mail adres">
+                
+                      <br>
+                      <button type="button" name="btn" id="footerButton" onclick="alert('Bedankt voor uw subscribe! We houden u up-to-date!')">
+                            Submit
+                        </button>
+                      </form>
+                </div>
+      </footer>
+            <script>
+              function openMenu(evt, menuName) {
+                var i, x, tablinks;
+                x = document.getElementsByClassName("menu");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < x.length; i++) {
+                  tablinks[i].className = tablinks[i].className.replace(" item", "");
+                }
+                document.getElementById(menuName).style.display = "block";
+                evt.currentTarget.firstElementChild.className += " item";
+              }
+              document.getElementById("myLink").click();
+              </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+#bestelling{
+  width: 300px;
+  padding: 10px;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#result{
+  text-align: center;
+  margin-bottom: 440px;
+}
+
+#myProgress {
+    margin: auto;
+    width: 50%;
+    background-color: #ddd;
+  }
+  
+  #myBar {
+    width: 1%;
+    height: 30px;
+    background-color: #4CAF50;
+  }

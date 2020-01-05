@@ -1,0 +1,30 @@
+#index-container{
+    display: grid;
+    grid-template-rows: 50px auto auto auto auto;
+    grid-template-areas: "menu"
+                        "foto"
+                        "slogan"
+                        "about"
+                        "footer";
+}
+
+
+#menu{
+    grid-area: menu;
+}
+
+#foto{
+    grid-area: "foto";
+}
+
+#slogan{
+    grid-area: slogan;
+}
+
+#info{
+    grid-area: about;
+}
+
+#footer{
+    grid-area: footer;
+}

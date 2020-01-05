@@ -1,0 +1,69 @@
+#openings-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:50px auto auto;
+  grid-template-areas: "menu menu"
+                        "foto uren"
+                        "footer footer";
+}
+
+#menu{
+  grid-area: menu;
+}
+
+#logo{
+  grid-area: foto;
+  margin: auto;
+  height: 300px;
+}
+
+#footer{
+  grid-area: footer;
+}
+
+.openinghours {
+  grid-area: uren;
+  font-family: Lucida Console;
+  border-radius: 4px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  box-shadow: 0 0 10px black;
+  padding: 20px 34px 32px 34px;
+  overflow: hidden;
+  width: 377px;
+  height: 460px;
+  font-size: 27px;
+}
+.openinghourscontent {
+    float:left;
+}
+.openinghourscontent h2 {
+    display:block;
+    text-align:center;
+    margin-top:.33em;
+}
+.openinghourscontent button {
+    color:white;
+    font-family:Courier New;
+    font-size:large;
+    font-weight:bolder;
+    background-color:#4679BD;
+    border-radius:4px;
+    width:100%;
+    margin-bottom:10px;
+}
+.today {
+    color: #8AC007;
+}
+.opening-hours-table tr td:first-child {
+    font-weight:bold;
+}
+#open-status {
+    display:block;
+    margin-top:-1em;
+    text-align:center;
+    border:dotted lightgrey 3px;
+}
+.opening-hours-table tr td {
+    padding:5px;
+}
